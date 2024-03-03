@@ -14,11 +14,11 @@ import java.util.List;
 @Service
 public class TicketServiceImpl implements TicketService{
 
-    private ShowSeatRepository showSeatRepository;
+    private final ShowSeatRepository showSeatRepository;
 
-    private TicketRepository ticketRepository;
+    private final TicketRepository ticketRepository;
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @Autowired
     public TicketServiceImpl(ShowSeatRepository showSeatRepository, TicketRepository ticketRepository, UserRepository userRepository) {

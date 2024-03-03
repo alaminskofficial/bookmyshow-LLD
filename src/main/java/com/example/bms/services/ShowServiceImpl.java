@@ -12,13 +12,13 @@ import java.util.*;
 @Service
 public class ShowServiceImpl implements ShowService{
 
-    private MovieRepository movieRepository;
-    private SeatsRepository seatsRepository;
-    private ScreenRepository screenRepository;
-    private ShowRepository showRepository;
-    private ShowSeatRepository showSeatRepository;
-    private SeatTypeShowRepository seatTypeShowRepository;
-    private UserRepository userRepository;
+    private final MovieRepository movieRepository;
+    private final SeatsRepository seatsRepository;
+    private final ScreenRepository screenRepository;
+    private final ShowRepository showRepository;
+    private final ShowSeatRepository showSeatRepository;
+    private final SeatTypeShowRepository seatTypeShowRepository;
+    private final UserRepository userRepository;
 
     @Autowired
     public ShowServiceImpl(MovieRepository movieRepository, SeatsRepository seatsRepository, ScreenRepository screenRepository, ShowRepository showRepository, ShowSeatRepository showSeatRepository, SeatTypeShowRepository seatTypeShowRepository, UserRepository userRepository) {
