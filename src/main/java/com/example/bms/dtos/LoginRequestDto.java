@@ -1,23 +1,8 @@
-package com.example.bms.models;
+package com.example.bms.dtos;
 
-import jakarta.persistence.Entity;
-import lombok.Data;
-
-@Data
-@Entity(name = "users")
-public class User extends BaseModel{
-
-    private String name;
+public class LoginRequestDto {
     private String email;
     private String password;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getEmail() {
         return email;

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class TicketController {
 
-    private TicketService ticketService;
+    private final TicketService ticketService;
 
     @Autowired
     public TicketController(TicketService ticketService) {
