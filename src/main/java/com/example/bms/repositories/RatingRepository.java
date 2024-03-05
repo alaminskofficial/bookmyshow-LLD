@@ -13,7 +13,7 @@ import java.util.Optional;
 public interface RatingRepository extends JpaRepository<Rating, Integer> {
 
     @Query("SELECT AVG(r.rating) FROM Rating r WHERE r.movie.id = ?1")
-    Double getAverageRatingForMovie(Integer movieId);
+    Double getAvgRatingForMovie(Integer movieId);
 
 
     Optional<Rating> findByUserAndMovie(User user, Movie movie);
